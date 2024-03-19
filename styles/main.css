@@ -13,8 +13,13 @@
   --spacing-sm: 10px;
 }
 
+/* 기본 스타일  */
+html{
+  font-size: 0.625em;
+}
 
 body{
+  font-size: 1.4rem;
   --text-color:var(--black);
   --bg-color:var(--white);
   
@@ -43,19 +48,35 @@ body{
 }
 
 
+/* 헤더 */
+.header{
+  background-color: yellow;
+  height: 10vh;
+}
+
+/* 비쥬얼 */
+.visual{
+  background-color: blue;
+  height: 10vh;
+}
+
+
 /* 메인콘텐츠 */
 .main{
+  height: 60vh;
   width: var(--container-size); 
   margin: 0 auto;
   background-color: salmon;
   display: flow-root;
   padding: 0 15px;
+
 }
 
 
 .group{
   float: left;
   margin: 0 15px;
+  border: 1px solid blue;
 }
 
 .group1{
@@ -78,12 +99,15 @@ body{
 
 /* 슬로건 */
 .slogan{
- 
+  background-color: teal;
+  height: 10vh;
 }
+
 
 
 
 /* 푸터 */
 .footer{
   background-color: gray;
+  height: 10vh;
 }
