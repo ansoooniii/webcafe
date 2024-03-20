@@ -6,6 +6,10 @@
 
   --white: #fff;
   --black: #000;
+
+  --gray100: #eee;
+  --gray200: #ccc;
+  --gray300: #aaa;
   
   --container-size: 940px;
   --spacing-lg: 30px;
@@ -21,15 +25,21 @@ html{
 body{
   font-size: 1.4rem;
   --text-color:var(--black);
-  --bg-color:var(--white);
+  --bg-color:var(--gray300);
   
 
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-weight: 300;
   line-height: 1.2;
   color: var(--text-color);
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color);
+  background-image: url("./../assets/bg/bg_flower.png"), linear-gradient(var(--gray200) 0%, var(--gray100) 30%, var(--white) 60%, var(--white) 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: 50% 0, 0 0; */
+  background: url("./../assets/bg/bg_flower.png") no-repeat 50% 0, linear-gradient(var(--gray200) 0%, var(--gray100) 30%, var(--white) 60%, var(--white) 100%) repeat 0 0, var(--bg-color);
 }
+
+
 
 @media (prefers-color-scheme: dark) {
  body{
@@ -50,13 +60,13 @@ body{
 
 /* 헤더 */
 .header{
-  background-color: yellow;
-  height: 10vh;
+  background-color: var(--white);
+  
 }
 
 /* 비쥬얼 */
 .visual{
-  background-color: blue;
+
   height: 10vh;
 }
 
@@ -66,7 +76,7 @@ body{
   height: 60vh;
   width: var(--container-size); 
   margin: 0 auto;
-  background-color: salmon;
+  background-color: var(--white);
   display: flow-root;
   padding: 0 15px;
 
