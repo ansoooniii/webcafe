@@ -49,6 +49,13 @@ body{
 }
 
 
+/* 링크스타일 */
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+
 /* 레이아웃 */
 .header, .visual, .slogan, .footer-inner{
   /* background-color: yellow; */
@@ -63,6 +70,41 @@ body{
   background-color: var(--white);
   
 }
+
+
+/* 로고 */
+
+
+/* 안내 링크 */
+.member{
+  --link-md-spacing: 8px;
+  --link-sm-spacing: 4px;
+  --focus-area: 4px;
+
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding: var(--focus-area) 0;
+  position: relative;
+  right: calc(var(--link-md-spacing) *-1);
+  
+    li{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    
+     a{
+      padding: var(--link-sm-spacing) var(--link-md-spacing);
+      text-transform: uppercase;
+    }
+  }
+  
+}
+
+
+
+/* 메인 메뉴 */
 
 /* 비쥬얼 */
 .visual{
