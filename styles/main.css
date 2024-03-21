@@ -364,39 +364,36 @@ fieldset{
   padding: 10px;
   border-radius: 5px;
   background: var(--orange200) radial-gradient(circle at right top, var(--orange100), var(--orange200));
-  button
-
 
   .login-title{
-   color: var(--yellow);
-   font-size: 1.5rem;
-   font-weight: 700;
-   text-indent: 1em;
-   margin-bottom: 15px;
- }
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-indent: 1em;
+    margin-bottom: 15px;
+  }
 
   .login-form{
     background-color: var(--white);
     border-radius: 5px 5px 0 0;
     padding: 10px 10px 0 10px;
-    
+
     fieldset{
-     position: relative;
-     border-bottom: 1px solid var(--gray300);
-     display: flex;
-     flex-flow: column nowrap;
-     row-gap: 6px;
-     padding-bottom: 10px;
+      position: relative;
+      border-bottom: 1px solid var(--gray300);
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 6px;
+      padding-bottom: 10px;
     }
 
- 
     label{
       display: inline-block;
       width: 4em;
     }
 
     input{
-      width:90px;
+      width: 90px;
       border: 1px solid var(--gray300);
       border-radius: 3px;
       padding: 2px 2px 2px 8px;
@@ -409,23 +406,24 @@ fieldset{
       right: 0;
       color: var(--white);
       background-color: var(--orange200);
-      font-size: 
-      border-radius: ;
+      font-size: 1.3rem;
+      width: 50px;
+      height: 50px;
+      border-radius: 3px;
+      border: 0;
     }
-    
   }
 
   
   .sign{
     background-color: var(--white);
     border-radius: 0 0 5px 5px;
-    padding: 0 10px 10px 10px;
+    padding: 10px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     font-size: 1.2rem;
-    border-bottom: 1px solid var(--gray300);
-    }
+  }
   }
 
   /* .login-item
