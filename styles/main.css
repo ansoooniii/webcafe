@@ -526,25 +526,56 @@ fieldset{
   }
 }
 
-/* 자료 검색 */
+/* 검색 폼 */
 .search-form{
-  background-color: var(--gray200) linear-gradient(var(--gray200), var(--gray100));
-  border: 1px solid var(--gray300);
-  border-radius: 10px 10px 0 0;
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #ccc;
+  border-radius: 15px 15px 0 0;
+  padding: 15px 25px 10px;
 
   fieldset{
-
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 8px;
   }
 
-  .lable{
-    display: inline-block;
-    font-size: 1.5rem;
-   
-  }
+   .search-input{
+     flex-grow: 1;
+     display: flex;
+     flex-flow: row nowrap;
+     column-gap: 8px;
+     align-items: center;
 
-  .lnput{
+      lable{
+        flex-shrink: 0;
+      }
+     
+      input{
+        flex-grow: 1;
+        min-width: 0;
+        width: 100%;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        padding: 2px 2px 2px 8px;
+        height: 24px;
+      }
 
-  }
+    }
+    
+    .search-button{
+      border: 0;
+      flex-shrink: 0;
+      background: #000;
+      color: #fff;
+      font-size: 1.3rem;
+      height: 24px;
+      padding: 0 10px;
+      border-radius: 5px;
+
+    
+    }
+
+  
 }
 
 
