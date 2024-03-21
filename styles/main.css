@@ -526,6 +526,26 @@ fieldset{
   }
 }
 
+/* 자료 검색 */
+.search-form{
+  background-color: var(--gray200) linear-gradient(var(--gray200), var(--gray100));
+  border: 1px solid var(--gray300);
+  border-radius: 10px 10px 0 0;
+
+  fieldset{
+
+  }
+
+  .lable{
+    display: inline-block;
+    font-size: 1.5rem;
+   
+  }
+
+  .lnput{
+
+  }
+}
 
 
 /* 슬로건 */
