@@ -1,4 +1,7 @@
 @import url(./reset.css);
+@import url(./fonts.css);
+@import url(./fontello.css);
+
 :root{
   --primary-color:#fff;
   --secondary-color:#fff;
@@ -302,13 +305,12 @@ a{
   p{
     display: inline-block;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    animation: moveEffect 2s  infinite forwards alternate ease-in-out running; 
-
+    animation: moveEffect 2s forwards ease-in-out running;
   }
 }
 
 @media (prefers-reduced-motion) {
-  .visual{
+  .visual {
     p{
       animation-play-state: paused;
     }
