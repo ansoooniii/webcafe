@@ -579,7 +579,10 @@ fieldset{
 .board{
   background-color: yellow;
   position: relative;
-  
+  grid-template-columns: 80px 80px 1fr;
+  margin-bottom: 20px;
+
+
   .notice{
     background: pink;
   }
@@ -632,8 +635,40 @@ fieldset{
     top: 0;
     right: 0;
   }
+}
 
+/* 새소식 */
+.news{
+  background: pink;
+  position: relative;
 
+  .news-title{
+    color: var(--orange200);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .news-link{
+    .news-item{
+      position: relative;
+      margin-top: 35px;
+      padding-left: 130px;
+      background: skyblue;
+
+      .news-item-thumbnail{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  
+  }
+  .news-more{
+    background: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 /* 슬로건 */
