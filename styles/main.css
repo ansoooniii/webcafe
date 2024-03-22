@@ -577,11 +577,30 @@ fieldset{
 
 /* 공지사항 및 자료실 */
 .board{
-  background-color: yellow;
   position: relative;
   grid-template-columns: 80px 80px 1fr;
+  grid-template-rows: 50px auto;
   margin-bottom: 20px;
 
+  .board-tab{
+    background: #ccc;
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .is-select .board-tab{
+    background: #fff;
+    border-color: var(--orange200) var(--orange200) transparent var(--orange200);
+    color: var(--orange200);
+  }
+
+  .notice-tab{
+    grid-area: 1/1/2/2;
+  }
+  
+  .acrhive-tab{
+    grid-area: 1/2/2/3;
+  }
 
   .notice{
     background: pink;
@@ -824,8 +843,7 @@ fieldset{
 
 
 .favorite{
-  background: pink;
-  margin: 10px;
+  /* margin: 10px; */
   position: relative;
 
  
